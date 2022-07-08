@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Running') {
             steps {
-                sh 'ls / '
+                sh '/backblaze/b2-linux authorize-account  002be4611dcb3b50000000006 K002PdbCGhGofYNxWVw3eM9FZQBW7Cc'
             }
         }
     }
