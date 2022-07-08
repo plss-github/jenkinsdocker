@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'servidor_plss'
+        label 'local'
         docker { image 'node:16.13.1-alpine' }
     }
     stages {
