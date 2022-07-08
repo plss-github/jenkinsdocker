@@ -2,13 +2,14 @@ pipeline {
     agent {
         
         docker { 
-               image 'node:16.13.1-alpine'
+               image 'plsscloud/b2-cli'
                label 'local'}
     }
     stages {
-        stage('Test') {
+        stage('Running') {
             steps {
-                sh 'node --version'
+                sh './b2-linux authorize-account  002be4611dcb3b50000000006 K002PdbCGhGofYNxWVw3eM9FZQBW7Cc'
+                sh './b2-linux list-buckets'
             }
         }
     }
