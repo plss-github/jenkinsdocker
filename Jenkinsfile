@@ -3,7 +3,9 @@ pipeline {
         
         docker { 
                image 'plsscloud/b2-cli'
-               label 'local'}
+               label 'local'
+               alwaysPull true
+        }
     }
     stages {
         stage('Running') {
